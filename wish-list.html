@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-3"><center>Hey Family!!!</center></h1>
+        <p class="lead"><center>This site is used to update your wishlist for Christams 2017!</center></p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Eduardo's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example19">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Ruben's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example20">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Gigi's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example21">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Vicky's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example22">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Julius's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example23">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Aiden's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example24">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Jalie's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example25">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Annette's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example26">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Edgar Cazares Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Elvia Cruz's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example2">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Yvette's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example3">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Luis Cruz's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example4">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Kike Cazares's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example5">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Ozzy Carapia's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example6">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Julie Cazares's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example7">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Sarahi Farias</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example8">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">German Cazares Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example9">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Yesenia Valdez's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example10">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Alejandra's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example11">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Inocencia Carapia's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example12">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Tali's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example13">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Lupe Carapia's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example14">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Adrian Mata's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example15">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Dafne Carapia's Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example16">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Candelaria Cazares Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example17">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an Item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div class="card">
+          <div class="card-block">
+            <h3 class="card-title">Bonifacio Cazares Wishlist</h3>
+            <p class="card-text"></p>
+            <div id="todo-list-example18">
+              <input
+                v-model="newTodoText"
+                v-on:keyup.enter="addNewTodo"
+                placeholder="Add an item"
+              >
+              <ul>
+                <li
+                  is="todo-item"
+                  v-for="(todo, index) in todos"
+                  v-bind:key="todo.id"
+                  v-bind:title="todo.title"
+                  v-on:remove="todos.splice(index, 1)"
+                ></li>
+              </ul>
+            </div>
+          </div><!-- end of card-block -->
+        </div>
+      </div>
+    </div>
+    <br>
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script>
+    Vue.component('todo-item', {
+      template: '\
+        <li>\
+          {{ title }}\
+          <button v-on:click="$emit(\'remove\')">X</button>\
+        </li>\
+      ',
+      props: ['title']
+      })
+
+      new Vue({
+      el: '#todo-list-example',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example2',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add Items to your wishlist',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example3',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example4',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example5',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example6',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example7',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example8',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example9',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example10',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example11',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example12',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example13',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example14',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example15',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example16',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example17',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example18',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example19',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example20',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example21',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example22',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example23',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example24',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example25',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+      new Vue({
+      el: '#todo-list-example26',
+      data: {
+        newTodoText: '',
+        todos: [
+          {
+            id: 1,
+            title: 'Add item to wish list',
+          }
+          ],
+        nextTodoId: 2
+      },
+      methods: {
+        addNewTodo: function () {
+          this.todos.push({
+            id: this.nextTodoId++,
+            title: this.newTodoText
+          })
+          this.newTodoText = ''
+        }
+      }
+      })
+
+    </script>
+  </body>
+</html>
